@@ -1,0 +1,24 @@
+/* Reset some default styles */
+/* Font styling */
+/* Body and color transitions */
+/* Light mode */
+/* Dark mode */
+/* Header styling */
+/* Navigation styling */
+/* Section styling */
+/* Section heading styling */
+/* Section content styling */
+/* Button styling */
+/* Project styling */
+/* Contact section styling */
+/* Add this section for skill bars */
+/* Smooth scroll effect */
+/* Animations */
+/* Customize the styling of different sections */
+/* Additional styles for specific resolutions */
+/* Update styles for headings in dark mode */
+/* Add this to your CSS file */
+/* Footer styling */
+/* Copyright text */
+/* Responsive styles for the footer */
+/* Error page styling */

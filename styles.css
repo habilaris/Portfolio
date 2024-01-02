@@ -1,0 +1,567 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    transition: background-color 0.5s;
+}
+
+
+/* Light mode */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    z-index: 2;
+    background-color: #222;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    flex: 1; /* This makes the header take up the remaining space */
+    text-align: left; /* Align the header text to the left */
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Navigation styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #333, #555);
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff4500;
+}
+
+nav button {
+    background-color: #333;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button img {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+nav button:hover {
+    background-color: #ff4500;
+}
+
+nav button:hover img {
+    transform: rotate(180deg);
+}
+
+/* Section styling */
+section {
+    padding: 4em 2em;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: 60px;
+}
+
+/* Section heading styling */
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* Section content styling */
+section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1.5em;
+}
+
+/* Button styling */
+.cta-button {
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    background-color: #ff4500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #222;
+}
+
+/* Project styling */
+.project {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.project a {
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #ff4500;
+}
+
+/* Contact section styling */
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 2em;
+    }
+}
+
+/* Add this section for skill bars */
+.skills {
+    background-color: #333;
+    color: #fff;
+}
+
+.skill {
+    margin-bottom: 1.5em;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #ff4500;
+    transition: width 1s ease-in-out;
+}
+
+/* Add media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .skill-bar {
+        height: 15px;
+    }
+}
+
+/* Additional styles for specific resolutions */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 0.3em 0.8em;
+    }
+
+    nav button {
+        padding: 0.3em;
+    }
+
+    nav button img {
+        width: 20px;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Customize the styling of different sections */
+.home {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+body.dark-mode .home {
+    color: var(--text-dark);
+}
+
+/* Project styling */
+.project {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.dark-mode .project h3 {
+    color: #333;
+}
+
+.project p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.project a {
+    display: inline-block;
+    padding: 0.7em 1.7em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #ff4500;
+}
+
+
+/* Add this section for skill bars */
+.skills {
+    background-color: #f5f5f5;
+}
+
+.skill {
+    margin-bottom: 1.5em;
+}
+
+.skill h3 {
+    color: #222;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-bar:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #ff4500;
+    transition: width 1s ease-in-out;
+}
+
+.dark-mode .skills {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .skill-bar {
+        height: 15px;
+    }
+}
+
+/* Add or modify styles for a smoother logo transformation during theme toggle */
+.dark-mode-logo {
+    filter: invert(1);
+    opacity: 0.8;
+    transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Customize the styling of different sections */
+.home {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+body.dark-mode .home {
+    color: var(--text-dark);
+}
+
+/* Add more sections as needed */
+
+/* Update styles for headings in dark mode */
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #c9c8c8;
+}
+
+/* Additional styles for specific resolutions */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+        color: #fff;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 0.3em 0.8em;
+        color: #fff;
+    }
+
+    nav button {
+        padding: 0.3em;
+    }
+
+    nav button img {
+        width: 20px;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+}
+
+/* Update styles for headings in dark mode */
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #c9c8c8;
+}
+
+/* Add this to your CSS file */
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Footer sections */
+.footer-section {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #cccccc;
+}
+
+.footer-section p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Footer links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-section a {
+    color: #c5c5c5;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer newsletter form */
+.footer-section form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.footer-section button {
+    background-color: #c6c6c6;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section button:hover {
+    background-color: #222;
+}
+
+/* Copyright text */
+.copyright {
+    margin-top: 2em;
+    font-size: 0.8em;
+    color: #555;
+}
+
+/* Responsive styles for the footer */
+@media only screen and (max-width: 768px) {
+    .footer-section {
+        flex: 1 0 100%;
+        margin: 0 0 1em 0;
+    }
+}
+
+
+.error-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.error-page h3 {
+    font-size: 2em;
+    color: fff; /* Set the color you prefer for the error title */
+    margin-bottom: 20px;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray; /* Set the background color you prefer for the error button */
+    color: #fff; /* Set the text color for the error button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.error-page a:hover {
+    background-color: #222; /* Set the background color for the button on hover */
+}

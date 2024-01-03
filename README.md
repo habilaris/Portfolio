@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio of Habil Aris - Web Developer
 
 Welcome to my web development portfolio! This repository contains the source code for my personal website showcasing my skills, projects, and contact information. Feel free to explore and learn more about my journey in the world of web development.

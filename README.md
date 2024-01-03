@@ -47,4 +47,5 @@ I'm Habil Aris, a passionate web developer with expertise in both front-end and 
 ## Usage
 
 1. Clone the repository to your local machine.
-   ```bash g   git clone https://github.com/habilaris/Portfolio.git
+   ```bash
+    g   git clone https://github.com/habilaris/Portfolio.git

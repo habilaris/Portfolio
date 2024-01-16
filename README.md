@@ -53,8 +53,11 @@ I'm Habil Aris, a passionate web developer with expertise in both front-end and 
 ## Link
 
 1. Explore my Portfolio.
+
    https://habilaris.github.io/Portfolio/index.html
+
    Or
+
    Just copy the link and paste into your browser:
    ```bash
       https://habilaris.github.io/Portfolio/index.html

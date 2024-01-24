@@ -58,6 +58,6 @@ I'm Habil Aris, a passionate web developer with expertise in both front-end and 
 
    Or
 
-   Just copy the link and paste into your browser:
+2. Just copy the link and paste into your browser:
    ```bash
-      https://habilaris.github.io/Portfolio/index.html
+   https://habilaris.github.io/Portfolio/index.html

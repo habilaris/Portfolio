@@ -565,3 +565,16 @@ footer {
 .error-page a:hover {
     background-color: #222; /* Set the background color for the button on hover */
 }
+
+/* Add or modify this in your existing CSS file */
+.header-text {
+    text-align: center; /* Center the text */
+}
+
+.header-tagline {
+    font-size: 1em;
+    color: #ffffff; /* Set the color you prefer for the tagline */
+    margin-top: -29px; /* Adjust the margin as needed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3.4px;
+}

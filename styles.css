@@ -44,6 +44,31 @@ header h1 {
     margin-bottom: 0.5em;
 }
 
+/* Add or modify this in your existing CSS file */
+.header-text {
+    text-align: center; /* Center the text */
+}
+
+.header-tagline {
+    font-size: 1em;
+    color: #ffffff; /* Set the color you prefer for the tagline */
+    margin-top: -29px; /* Adjust the margin as needed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3.4px;
+}
+
+.portfolio-text {
+    position: absolute;
+    top: 27px;
+    right: 70px;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff; /* Set the color you prefer for the text */
+    margin-top: 5px; /* Adjust the margin-top if needed */
+}
+
+
+
 /* Navigation styling */
 nav {
     position: fixed;
@@ -566,15 +591,3 @@ footer {
     background-color: #222; /* Set the background color for the button on hover */
 }
 
-/* Add or modify this in your existing CSS file */
-.header-text {
-    text-align: center; /* Center the text */
-}
-
-.header-tagline {
-    font-size: 1em;
-    color: #ffffff; /* Set the color you prefer for the tagline */
-    margin-top: -29px; /* Adjust the margin as needed */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 3.4px;
-}

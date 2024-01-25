@@ -458,8 +458,17 @@ body.dark-mode h3 {
 /* Update styles for headings in dark mode */
 body.dark-mode h2,
 body.dark-mode h3 {
-    color: #c9c8c8;
+    color: #e4e4e4;
 }
+
+body.dark-mode p {
+    color: #ebe9e9;
+}
+
+.dark-mode .project p {
+    color: darkslategrey;
+}
+
 
 /* Add this to your CSS file */
 .logo-container {

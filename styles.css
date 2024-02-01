@@ -296,6 +296,14 @@ section p {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .portfolio-text {
+        display: none; /* Hide the Portfolio text on mobile screens */
+    }
+}
+
+
+
 /* Smooth scroll effect */
 html {
     scroll-behavior: smooth;
